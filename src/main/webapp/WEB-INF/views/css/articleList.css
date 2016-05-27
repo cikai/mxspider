@@ -1,0 +1,26 @@
+
+#main {
+	margin-top: 100px;
+	margin-left: 5%;
+	width: 90%
+}
+
+th.sorting_asc {
+	width: 10%;
+}
+
+th.sorting {
+	width: 30%;
+}
+
+#article {
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 5%;
+}
+
+#title {
+	text-align: center;
+	font-size: 20px;
+	padding-bottom: 25px;
+}
