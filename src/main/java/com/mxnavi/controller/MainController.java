@@ -7,8 +7,10 @@ import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.mxnavi.dto.FormDto;
 import com.mxnavi.dto.ListDto;
@@ -41,6 +43,21 @@ public class MainController {
 		Map<String, Object> resultMap = new HashMap<String, Object>();
 		resultMap.put("list", listModel);
 		return resultMap;
+	}
+
+	@RequestMapping("pages/{pageNo}")
+	@ResponseBody
+	public ModelAndView articlePage(@PathVariable String pageNo) {
+		List<ListDto> listDto = service.getListById(pageNo);
+		List<ListModel> pageModel = listDto.stream().map(this::dtoToModel).collect(Collectors.toList());
+		Map<String, Object> resultMap = new HashMap<String, Object>();
+		resultMap.put("page", pageModel);
+		
+		ModelAndView view = new ModelAndView();
+		view.setViewName("article");
+		view.addAllObjects(resultMap);
+		
+		return view;
 	}
 
 	public FormDto modelToDto(FormModel formModel) {

@@ -1,7 +1,5 @@
 package com.mxnavi.model;
 
-import java.sql.Timestamp;
-
 public class ListModel {
 
 	private Integer id;

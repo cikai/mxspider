@@ -1,4 +1,4 @@
-define([ "common" ], function(common) {
+define([ "common", "article" ], function(common, article) {
 
 	function init() {
 

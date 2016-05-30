@@ -15,10 +15,10 @@ public class PageController {
 		view.setViewName("articleList");
 		return view;
 	}
-
-	@RequestMapping("/article")
+	
+	@RequestMapping("/test")
 	@ResponseBody
-	public ModelAndView contentPage() {
+	public ModelAndView testPage() {
 		ModelAndView view = new ModelAndView();
 		view.setViewName("article");
 		return view;

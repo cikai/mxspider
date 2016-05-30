@@ -6,17 +6,12 @@
 <meta charset='utf-8'>
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="images/favicon.ico" mce_href="images/favicon.ico"
-	rel="bookmark" type="image/x-icon" />
-<link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon"
-	type="image/x-icon" />
-<link href="images/favicon.ico" mce_href="images/favicon.ico"
-	rel="shortcut icon" type="image/x-icon" />
+<link href="images/favicon.ico" mce_href="images/favicon.ico" rel="bookmark" type="image/x-icon" />
+<link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon" />
+<link href="images/favicon.ico" mce_href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 <link rel='stylesheet' type='text/css' href='css/libs/bootstrap.css'>
-<link rel='stylesheet' type='text/css'
-	href='css/libs/jquery.dataTables.css'>
-<link rel='stylesheet' type='text/css'
-	href='css/libs/dataTables.bootstrap.css'>
+<link rel='stylesheet' type='text/css' href='css/libs/jquery.dataTables.css'>
+<link rel='stylesheet' type='text/css' href='css/libs/dataTables.bootstrap.css'>
 <link rel="stylesheet" type="text/css" href="css/articleList.css">
 <script src="js/libs/jquery-2.1.4.js"></script>
 <script src="js/libs/bootstrap.js"></script>
@@ -58,6 +53,6 @@
 		<div id="title"></div>
 		<div id="content"></div>
 	</div>
-
+	
 </body>
 </html>
